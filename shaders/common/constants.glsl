@@ -1,0 +1,12 @@
+#ifdef CONSTANTS
+#define CONSTANTS
+
+#define PI_INV 0.3183098861837907
+#define PI 3.14159265358979324
+
+#define GAMMA 2.2
+#define GAMMA_INV 0.45454545
+
+const vec3 GAMMA_INV_VEC3 = vec3(GAMMA_INV);
+
+#endif
