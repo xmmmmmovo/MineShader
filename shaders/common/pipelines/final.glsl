@@ -24,7 +24,7 @@ const int gaux4Format = RGB16; //fresnel
 // Program//
 void main() {
   vec2 newTexCoord = texCoord;
-  vec3 color = texture2DLod(colortex0, texCoord, 0).rgb;
+  vec3 color = pow(texture2DLod(colortex0, texCoord, 0).rgb, vec3(1.0f));
   gl_FragColor = vec4(color, 1.0);
 }
 
